@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=Roboto&display=swap');
+
+body
+{
+	margin: 0px !important;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+html, body { 
+	height: 100% 
+}
+
+.Banner{
+	background-color: #ffa500;
+	position: sticky;
+	z-index:1;
+	padding: 50px 0;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+
+}
+.Banner h1
+{	
+	position: absolute;
+	top: 0px;
+	right: 90px;
+	font-size: 50px;
+	font-family: 'Hurricane', cursive;
+		
+}
+
+.Banner h2
+{
+	position: absolute;
+	top: 43px;
+	left: 25px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.Banner h3
+{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.Banner h4
+{
+	position: absolute;
+	top: 35px;
+	left: 200px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.Banner h5
+{
+	position: absolute;
+	top: 20px;
+	left: 320px;
+	font-size: 18px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 100px 100px 100px 100px;
+}
+.location h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hotel1 {
+    
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hotel1 a{
+    position: relative;
+    color:blue;
+    font-size: 18px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hotel1 p{
+    padding: 10px 350px;
+}
+.hotel1 h2{
+    position: absolute; 
+    top:260;
+    left:1080;
+    
+}
+.hotel2 {
+    
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hotel2 a{
+    position: relative;
+    color:blue;
+    font-size: 18px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hotel2 p{
+    padding: 10px 350px;
+}
+.hotel2 h2{
+    position: absolute; 
+    top:500;
+    left:1080;
+   
+}
+.hotel3 {
+    
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hotel3 a{
+    position: relative;
+    color:blue;
+    font-size: 18px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hotel3 p{
+    padding: 10px 350px;
+}
+.hotel3 h2{
+    position: absolute; 
+    top:750;
+    left:1080;
+    
+}
+.hotel4 {
+    
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hotel4 a{
+    position: relative;
+    color:blue;
+    font-size: 18px;
+    left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.hotel4 p{
+    padding: 10px 350px;
+}
+.hotel4 h2{
+    position: absolute; 
+    top:980;
+    left:1080;
+    
+}

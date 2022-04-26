@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto&display=swap');
+
+body
+{
+	margin: 0px !important;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+html, body { 
+	height: 100% 
+}
+
+.Banner{
+	background-color: #ffa500;
+	position: sticky;
+	z-index:1;
+	padding: 55px 0;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+
+}
+.Banner h1
+{	
+	position: absolute;
+	top: 0px;
+	right: 90px;
+	font-size: 50px;
+	font-family: 'Hurricane', cursive;
+	
+		
+}
+
+.Banner h2
+{
+	position: absolute;
+	top: 43px;
+	left: 25px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	text-decoration: none;
+}
+.Banner h3
+{
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.Banner h4
+{
+	position: absolute;
+	top: 35px;
+	left: 300px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.Banner h5
+{
+	position: absolute;
+	top: 20px;
+	left: 420px;
+	font-size: 18px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 100px 100px 100px 100px;
+}
+
+.Banner a{
+	text-decoration: none;
+	color: black;
+}
+.Banner h2:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.Banner h2:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	color: black;
+}
+.Banner h3:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.Banner h3:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	color: black;
+}
+.Banner h4:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.Banner h4:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	color: black;
+}
+
+
+p.welcome{
+	position: absolute;
+	top: 200px;
+	left: 220px;
+	right:200px;
+    text-align: center;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	
+	color: white;
+}
+p.heading{
+	position: absolute;
+	top: 260px;
+	left: 220px;
+	right:200px;
+    text-align: center;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;	
+	color: white;
+}
+.image a{
+	position: absolute;
+	top: 400px;
+	left: 590px;
+	font-size: 18px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 20px 100px 100px 100px;
+	font-family: 'Roboto', sans-serif;
+}
+.overlay{
+	position: fixed;
+	z-index:2;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+		
+}
+.overlay:target{
+	visibility: visible;
+	opacity: 1;
+	
+}
+.wrapper{
+	margin: 70px auto;
+	padding: 40px;
+	background: white;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transform: all 5s ease-in-out;
+
+}
+
+.wrapper h2{
+	margin-top: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.wrapper a.close{
+	position: absolute;
+	top: 10px;
+	left: 400px;
+	transition: all 20px;
+	font-weight: bold;
+	font-size: 30px;
+    text-decoration: none;
+	color: #333;
+
+}
+.wrapper content{
+	max-height: 30%;
+	overflow: auto;
+}
+
+.container{
+	border-radius: 5px;
+	background: white; 
+	padding: 20px 0;
+
+}
+
+from label{
+	text-transform: uppercase;
+	font-weight:500;
+	letter-spacing: 3px;
+}
+input[type=text]{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+input[type=date]{
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	margin-right: 4px;
+	
+	
+}
+input[type=submit]{
+	background-color: orange;
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-bottom: 6px;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	
+
+}
+.drop{
+	width: 90%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+
+}
+.contact h2{
+	position: relative;
+	top: 80px;
+	
+	left: 850px;
+	width: 250px;
+	height: 100px;
+	font-size: 18px;
+	padding: 15px;
+	background-color: #4FFFB0;
+	box-shadow: 10px 10px;
+}
+.contact p{
+	padding: 50px 50px;
+	text-align: centre;
+	position: absolute;
+	top: 700px;
+	font-size: 14px;
+}
+
+.card1 li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 90px 50px;
+  background: white;
+  top: 900px;
+  left: 50px;
+  position: absolute;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+ 
+}
+
+.card1 li img{
+	position: absolute;
+	bottom: 153px;
+	right: 0px;
+	
+
+}
+
+.card1 a.main {
+  color: white;
+  text-align: center;
+  display: block;
+  z-index: 100;
+/*<!--top: 10px;-->*/
+}
+
+.card1 li:hover{
+	transform: scale(1.05);
+}
+
+.card1 li a.main::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
+.card1 li p{
+	position:relative;
+	top: 50px;
+	text-align: center;
+}
+
+.card1 hr{
+	position: relative;
+	bottom: 15px;
+}
+
+
+.card2 li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 90px 50px;
+  background: white;
+  top: 900px;
+  left: 450px;
+  position: absolute;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+ 
+}
+.card2 li img{
+	position: absolute;
+	bottom: 153px;
+	/*#left: 0px;*/
+	right: 0px;
+	
+
+}
+
+.card2 a.main {
+  color: white;
+  text-align: center;
+  display: block;
+  z-index: 100;
+  /*#top: 10px;*/
+}
+
+.card2 li:hover{
+	transform: scale(1.05);
+}
+
+.card2 li a.main::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+.card2 li p{
+	position:relative;
+	top: 50px;
+	text-align: center;
+}
+.card2 hr{
+	position: relative;
+	bottom: 15px;
+}
+.card3 li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 90px 50px;
+  background: white;
+  top: 900px;
+  left: 850px;
+  position: absolute;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Roboto', sans-serif;
+ 
+}
+.card3 li img{
+	position: absolute;
+	bottom: 153px;
+	/*#left: 0px;*/
+	right: 0px;
+	
+
+}
+
+.card3 a.main {
+  color: white;
+  text-align: center;
+  display: block;
+  z-index: 100;
+  /*#top: 10px;*/
+}
+
+.card3 li:hover{
+	transform: scale(1.05);
+}
+
+.card3 li a.main::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+.card3 li p{
+	position:relative;
+	top: 50px;
+	text-align: center;
+}
+.card3 hr{
+	position: relative;
+	bottom: 15px;
+}
+
+footer{
+	position:absolute;
+	background-color:black;
+	color: white;
+	padding: 20px;
+	width: 100%;
+	top: 1300px;
+	
+	
+}
+footer a:link{
+	color:white
+}
+
+.contact h1{
+	position: relative;
+	top: 20px;
+	left: 100px;
+	width: 450px;
+	font-size: 90px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+	border-radius: 0px;
+	border-radius: 0px;
+	font-family: 'Roboto', sans-serif;
+ 
+	
+}
+.contact h2{
+	position: relative;
+	top: 80px;	
+	left: 850px;
+	width: 250px;
+	height: 100px;
+	font-size: 18px;
+	padding: 15px;
+	background-color: #4FFFB0;
+	box-shadow: 10px 10px;
+	font-family: 'Roboto', sans-serif;
+
+}
+.contact p{
+	padding: 50px 50px;
+	text-align: centre;
+	position: absolute;
+	top: 700px;
+	font-size: 14px;
+}
+.contact a:hover{
+	transform: scale(1.5);
+
+}
+
